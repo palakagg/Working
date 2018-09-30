@@ -129,6 +129,21 @@ HttpSession session2=request.getSession(false);
         <img src="ABOUT US2.png" class="img-rounded" alt="Cinque Terre" style="max-width: 100%; max-height:100%; ">
           
               </div>
+                 <footer class="footer">
+        <span class="container-fluid" style="padding: 10px;">
+           <nav class="pull-left">
+                    <ul style="list-style: none;">
+                        <li>
+                            <a href="#">
+                                About us
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Powered by CITI, All rights reserved
+                </p>
+    </footer>
             </div>
 	
 	<!-- <br><ul>
@@ -145,21 +160,6 @@ HttpSession session2=request.getSession(false);
       </div>
       
       <!-- main-panel ends -->
-      <footer class="footer">
-        <span class="container-fluid" style="padding: 10px;">
-           <nav class="pull-left">
-                    <ul style="list-style: none;">
-                        <li>
-                            <a href="#">
-                                About us
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script> Powered by CITI, All rights reserved
-                </p>
-    </footer>
     </div>
     
     

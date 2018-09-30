@@ -148,7 +148,7 @@
             <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body" >
-                  <h5>End of Day Trade List</h5>
+                  <h4>End of Day Trade List</h4>
                   <%
 					List<Transaction> list1 = (List<Transaction>)request.getAttribute("transactions");
             
@@ -260,7 +260,7 @@
                       </td></tr>
                     
                       <% } %>
-                    <tr>
+                    <tr style="background: rgba(70,70,100, 0.9);">
  <td class="input"><!--  <input class="addNew" type="text" id="new_trade">--></td> 
 <td class="input"><select class="addNew" id="new_security">
 		<option value="Facebook">Facebook</option>
@@ -282,7 +282,7 @@
     	<option value="JPMorgan">JPMorgan</option>
     	<option value="DeutscheBank">DeutscheBank</option>
     	<option value="GoldmanSach">GoldmanSachs</option></select></td>
-<td class="buttons"><button class="add" onclick="add_row();" value="Add Row"><i class="mdi mdi-plus-circle"></i></button></td>
+<td class="buttons"><button style="margin-top:18px;"class="add" onclick="add_row();" value="Add Row"><i class="mdi mdi-plus-circle"></i></button></td>
 </tr>
                     </tbody>
                   </table>
