@@ -64,7 +64,7 @@ HttpSession session2=request.getSession(false);
       </div>
     </nav>
     <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
+    <div class="container-fluid page-body-wrapper" style="padding-top: 50px">
       <!-- partial:partials/_sidebar.html -->
      <nav class="sidebar sidebar-offcanvas" id="sidebar">
      <div id="nav">
@@ -343,7 +343,7 @@ HttpSession session2=request.getSession(false);
 
   <!-- plugins:js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
- <!--  --> <script src="js/scripts.js"></script> -->
+ <!--  --> <script src="js/scripts.js"></script>
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <script src="vendors/js/vendor.bundle.addons.js"></script>
   <script src="data.js"></script>

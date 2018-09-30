@@ -9208,8 +9208,12 @@ pre code {
 	/* display: block; */
 	/* float: left; */
 	vertical-align: middle;
-	padding: 
+	padding: 10px 0px;
 }
+
+/* .row .table .tableHead .edit{
+	padding: 10px 0px;
+} */
 
 .row .table .input{
 	padding: 0;
@@ -9217,7 +9221,7 @@ pre code {
 
 .row .table .tableData{
 	boder: 0px; 
-	padding: 0 0;
+	padding: 10px 26px;
 }
 
 .row .table .buttons{
@@ -9226,6 +9230,8 @@ pre code {
 	display: flex;
 	background: url('<i class="mdi mdi-content-save"></i>');
 	border-bottom: none;
+	border-left: none;
+	border-right: none;
 }
 
 .row .table .buttons .delete{
@@ -18969,6 +18975,11 @@ code {
 
 .footer .container-fluid .pull-right{
 	float: right;
+}
+
+.clicks{
+	display: flex;
+	padding: auto;
 }
 
 .footer a {

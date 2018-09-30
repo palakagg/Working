@@ -13,7 +13,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Libra Application</title>
+  <title>Charts | Libra Application</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -64,7 +64,7 @@ HttpSession session2=request.getSession(false);
       </div>
     </nav>
     <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
+    <div class="container-fluid page-body-wrapper" style="padding-top: 50px;">
       <!-- partial:partials/_sidebar.html -->
      <nav class="sidebar sidebar-offcanvas" id="sidebar">
      <div id="nav">
@@ -135,7 +135,7 @@ HttpSession session2=request.getSession(false);
              <div class="row">
             <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
-                <div class="card-body style="width: 18rem;">
+                <div class="card-body" style="background-color: rgba(70,70,70, 0.2);" >
                   <h4 class="card-title">Amount Spent to Buy Different Securities</h4>
                    <canvas id="myChart" width="200" height="150""> </canvas>
                   
@@ -144,7 +144,7 @@ HttpSession session2=request.getSession(false);
             </div>
             <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
-                <div class="card-body">
+                <div class="card-body" style="background-color: rgba(70,70,70, 0.2);">
                   <h4 class="card-title">Amount Received From Selling DIfferent Securities</h4>
                  <canvas id="myChart1" width="200" height="150"></canvas>
                 </div>
@@ -153,17 +153,11 @@ HttpSession session2=request.getSession(false);
           </div>
            
           
-          <!--   <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Charts</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Chart-js</li>
-              </ol>
-            </nav> -->
           </div>
            <div class="row">
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
-                <div class="card-body">
+                <div class="card-body" style="background-color: rgba(70,70,70, 0.4);">
                   
                   <canvas id="myChart2" style="height:250px"></canvas>
                 </div>
@@ -447,12 +441,22 @@ HttpSession session2=request.getSession(false);
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
           <footer class="footer">
-          <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">THANK YOU!! All rights reserved.<br>POWERED BY CITI</span>
-            <!-- <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span> -->
-
-          </div>
-        </footer>
+        <span class="container-fluid" style="padding: 10px;">
+           <nav class="pull-left">
+                    <ul style="list-style: none;">
+                        <li>
+                            <a href="#">
+                                About us
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Powered by CITI, All rights reserved
+                </p>
+            </div>
+    </footer>
+    
         
         <!-- partial -->
       </div>

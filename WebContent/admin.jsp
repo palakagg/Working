@@ -87,7 +87,7 @@
               <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
             </a>
           </li>
-          <li class="nav-item"> 
+          <li class="nav-item" style="background: #242424"> 
             <a class="nav-link" href="check1">
               <span class="menu-title">Dashboard</span>
               <i class="mdi mdi-home menu-icon"></i>
@@ -164,11 +164,11 @@
                           SECURITY NAME
                         </th>
                         <th class="tableHead">
-                          QUANTITY<a class="edit" href="filterquan"><i class="mdi mdi-filter"></i></a>
+                          QUANTITY<a class="edit" href="filterquan"><i class="mdi mdi-sort-ascending"></i></i></a>
                           
                         </th>
                         <th class="tableHead">
-                          PRICE <a class="edit" href="filterprice"><i class="mdi mdi-filter"></i></a>
+                          PRICE <a class="edit" href="filterprice"><i class="mdi mdi-sort-ascending"></i></i></a>
                         </th>
                          <th class="tableHead">
                           BUYER CLEARING MEMBER
@@ -289,10 +289,16 @@
              <br>
              <br>
              
+             
+             <div class="clicks">
+             
              <button id="button1" value="Random" class="random" onclick="pop()">Generate Random Data</button>
   
                <button id="button2" value="Default" class="default" onclick="defo()">Get Default Data</button>
             
+           
+            
+            </div>
            
             
            
@@ -336,7 +342,7 @@
 
   <!-- plugins:js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
- <!--  --> <script src="js/scripts.js"></script> -->
+ <!--  --> <script src="js/scripts.js"></script>
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <script src="vendors/js/vendor.bundle.addons.js"></script>
   <script src="data.js"></script>
@@ -348,6 +354,7 @@
   <script src="js/misc.js"></script>
   
   <!-- endinject -->
+ 
   <!-- Custom js for this page-->
   <script src="js/dashboard.js"></script>
   <!-- End custom js for this page-->
@@ -374,11 +381,11 @@ var trade=document.getElementById("tradeid_row"+no);
  var seller_data=seller.innerHTML;
  
  
- security.innerHTML="<input type='text' id='security_text"+no+"' value='"+security_data+"' style='width: 100%;'>";
+ security.innerHTML="<select class='addNew' id='ew_security' style='width: auto;'><option value='Facebook'>Facebook</option><option value='Apple'>Apple</option><option value='GE'>GE</option><option value='Walmart'>Walmart</option><option value='LinkedIn'>LinkedIn</option></select>"
  quantity.innerHTML="<input type='number' id='quantity_text"+no+"' min='1000' value='"+quantity_data+"' style='width: 100%;'>";
  price.innerHTML="<input type='number' id='price_text"+no+"' value='"+price_data+"' style='width: 100%;'>";
- buyer.innerHTML="<input type='text' id='buyer_text"+no+"' value='"+buyer_data+"' style='width: 100%;'>";
- seller.innerHTML="<input type='text' id='seller_text"+no+"' value='"+seller_data+"' style='width: 100%;'>";
+ buyer.innerHTML="<select class='addNew' id='new_buyer'><option value='Citi'>Citi</option><option value='JPMorgan'>JPMorgan</option><option value='DeutscheBank'>DeutscheBank</option><option value='GoldmanSach'>GoldmanSachs</option></select>";
+ buyer.innerHTML="<select class='addNew' id='new_buyer'><option value='Citi'>Citi</option><option value='JPMorgan'>JPMorgan</option><option value='DeutscheBank'>DeutscheBank</option><option value='GoldmanSach'>GoldmanSachs</option></select>";
 }
 function save_row(no)
 {
